@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/minimal-table.css" real="stylessheet" type="text/cs" />
+    <title>Work with a new table</title>
+  </head>
+  <body>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+    <h1>Building our first spreadsheet</h1>
+    <table>
+      <colgroup>
+        <!-- <col style="background: yellow" />
+        <col style="background: blue" />
+        <col style="background: green" /> -->
+        <col style="background: pink" span="3" />
+      </colgroup>
+      <tr>
+        <th>date 1</th>
+        <th>date 1</th>
+        <th>date 1</th>
+      </tr>
+      <tr>
+        <td colspan="2">date 2</td>
+        <!-- <td>date 2</td> -->
+        <td rowspan="2">date 2</td>
+      </tr>
+      <tr>
+        <td>date 3</td>
+        <td>date 3</td>
+        <!-- TODO: dqwdqwd -->
+        <!-- !fsvvv
+         -->
+        <!-- <td>date 3</td> -->
+      </tr>
+    </table>
+  </body>
+</html>
